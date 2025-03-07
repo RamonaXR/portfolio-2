@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
     "preview": "vite preview",
+    "format": "prettier -w src/**/*.{js,jsx}",
+    "lint": "eslint src/**/*.{js,jsx}",
+    "lint-fix": "eslint src/**/*.{js,jsx} --cache --fix",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -33,7 +35,9 @@
     "vite": "^6.2.0"
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.{js,css,md}": "prettier --write"
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   }
 }
