@@ -5,13 +5,19 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div id="root" className="min-h-screen">
+    <div className="min-h-screen bg-gray-900 font-sans text-gray-100">
       <Header />
       <main>
-        <Hero />
-        <Projects />
+        <section id="about">
+          <Hero />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
       </main>
-      <Footer />
+      <footer id="contact">
+        <Footer />
+      </footer>
     </div>
   );
 }
