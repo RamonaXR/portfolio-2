@@ -1,25 +1,37 @@
+import { useEffect } from "react";
 import { FaTimes } from "react-icons/fa";
 
 const ImageModal = ({ isOpen, imageSrc, onClose }) => {
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "auto";
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
+
   if (!isOpen) return null;
 
   return (
     <div
-      className="bg-opacity-70 fixed inset-0 z-50 flex items-center justify-center bg-black"
+      className="fixed inset-0 z-50 flex items-center justify-center px-4 backdrop-blur-xs"
       onClick={onClose}
     >
-      <div className="relative w-full max-w-3xl p-4" onClick={(e) => e.stopPropagation()}>
+      <div
+        className="relative w-full max-w-3xl rounded shadow-lg"
+        onClick={(e) => e.stopPropagation()}
+      >
         <button
-          className="absolute top-4 right-4 text-3xl font-bold text-black"
           onClick={onClose}
           aria-label="Close Modal"
+          className="absolute -top-3 -right-3 rounded-full bg-gray-900 p-2 text-white shadow transition-colors hover:bg-gray-800"
         >
-          <FaTimes />
+          <FaTimes size={20} />
         </button>
+
         <img
           src={imageSrc}
           alt="Full-size preview"
-          className="h-auto w-full rounded object-contain shadow-lg"
+          className="h-auto w-full rounded object-contain"
         />
       </div>
     </div>
