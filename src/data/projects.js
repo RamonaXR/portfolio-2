@@ -1,7 +1,7 @@
 export const PROJECTS = [
   {
     title: "React E-Commerce Store (JavaScript Frameworks)",
-    image: "images/jsframeworks.jpg",
+    image: "/img/jsframeworks.jpg",
     description:
       "A responsive e-commerce store offering product exploration, cart management, and checkout. Uses Noroff's API, React, and Tailwind.",
     website: "https://react-ca-ramona.netlify.app",
@@ -9,7 +9,7 @@ export const PROJECTS = [
   },
   {
     title: "Holidaze (Project Exam 2)",
-    image: "images/holidaze.jpg",
+    image: "img/holidaze.jpg",
     description:
       "A venue discovery and booking system with search, detailed views, and user authentication. Powered by Noroff's API, React, and Tailwind.",
     website: "https://holidaze-ramona-pe2.netlify.app",
@@ -17,7 +17,7 @@ export const PROJECTS = [
   },
   {
     title: "Biddershop (Semester Project 2)",
-    image: "images/biddershop.jpg",
+    image: "img/biddershop.jpg",
     description:
       "An online auction marketplace for browsing, bidding, and selling items. Leverages Noroff's API with Javascript and Tailwind.",
     website: "https://biddershop-sp2.netlify.app",
