@@ -8,13 +8,13 @@ const Footer = () => {
         <p className="mb-6 text-gray-400">Want to get in touch? Feel free to reach out!</p>
         <div className="mb-6 flex justify-center space-x-6">
           <a
-            href="mailto:your-email@example.com"
+            href="mailto:ramonaelise@gmail.com"
             className="text-yellow-500 transition-colors hover:text-yellow-400"
           >
             <FaEnvelope size={24} />
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/ramona-jensen-9994362b8/"
             target="_blank"
             rel="noreferrer"
             className="text-yellow-500 transition-colors hover:text-yellow-400"
@@ -22,7 +22,7 @@ const Footer = () => {
             <FaLinkedin size={24} />
           </a>
           <a
-            href="#"
+            href="https://github.com/RamonaXR"
             target="_blank"
             rel="noreferrer"
             className="text-yellow-500 transition-colors hover:text-yellow-400"
