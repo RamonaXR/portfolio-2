@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,28 +25,11 @@ const Header = () => {
         </ul>
         <div className="md:hidden">
           <button onClick={toggleMenu} aria-label="Toggle Menu" className="focus:outline-none">
-            <svg
-              className="h-6 w-6 text-gray-100"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              {menuOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              )}
-            </svg>
+            {menuOpen ? (
+              <FaTimes className="h-6 w-6 text-gray-100" />
+            ) : (
+              <FaBars className="h-6 w-6 text-gray-100" />
+            )}
           </button>
         </div>
       </nav>
