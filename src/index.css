@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins";
+  --container-width: 1200px;
+  --container-padding: 1rem;
+  --grid-cols-cards: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: theme(--container-padding);
+
+  @media (width >= theme(--breakpoint-sm)) {
+    max-width: theme(--container-width);
+  }
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-gray-900 text-gray-200;
+}
