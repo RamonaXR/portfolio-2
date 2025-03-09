@@ -20,7 +20,7 @@ const Hero = () => {
           Backend studies to pursue a Fullstack Developer career. I build modern, responsive web
           applications using React, Tailwind, and a variety of cutting-edge technologies.
         </p>
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-4 flex max-w-md flex-wrap gap-2">
           <Badge label="HTML" />
           <Badge label="CSS" />
           <Badge label="React" />
