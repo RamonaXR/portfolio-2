@@ -9,6 +9,7 @@ const Footer = () => {
         <div className="mb-6 flex justify-center space-x-6">
           <a
             href="mailto:ramonaelise@gmail.com"
+            aria-label="Email Ramona Jensen"
             className="text-yellow-500 transition-colors hover:text-yellow-400"
           >
             <FaEnvelope size={24} />
@@ -17,6 +18,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/ramona-jensen-9994362b8/"
             target="_blank"
             rel="noreferrer"
+            aria-label="Visit Ramona Jensen's LinkedIn profile"
             className="text-yellow-500 transition-colors hover:text-yellow-400"
           >
             <FaLinkedin size={24} />
@@ -25,6 +27,7 @@ const Footer = () => {
             href="https://github.com/RamonaXR"
             target="_blank"
             rel="noreferrer"
+            aria-label="Visit Ramona Jensen's GitHub profile"
             className="text-yellow-500 transition-colors hover:text-yellow-400"
           >
             <FaGithub size={24} />
