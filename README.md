@@ -1,12 +1,51 @@
-# React + Vite
+# Portfolio 2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website built with **React**, **Vite**, and **Tailwind CSS**. It showcases my projects, skills, and background as a Frontend Developer who has just completed a higher academic degree in Frontend Development and is now starting Backend studies to pursue a Fullstack Developer career.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design:**  
+  Adapts seamlessly from mobile devices to desktop screens.
+- **Smooth Navigation:**  
+  Clickable nav links scroll smoothly to the About (Hero), Projects, and Contact (Footer) sections.
+- **Modern UI Components:**  
+  Includes a Hero section with a profile image and tech badges, dynamic project cards with modal image previews, and more.
+- **Custom Modal:**  
+  A reusable modal component to view full-sized project images with body scroll lock.
+- **Built with Modern Technologies:**  
+  React, Vite, Tailwind CSS, and React Icons.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React:** UI library.
+- **Vite:** Development server and bundler.
+- **Tailwind CSS:** Utility-first CSS framework.
+- **React Icons:** Icon library.
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone git@github.com:RamonaXR/portfolio-2.git
+```
+
+2.  Install the dependencies:
+
+```bash
+npm install
+```
+
+### Running
+
+To run the app in development mode, use the following command:
+
+```bash
+npm run dev
+```
+
+To build the app for production, use the following command:
+
+```bash
+npm run build
+```
