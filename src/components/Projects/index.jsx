@@ -18,7 +18,7 @@ const Projects = () => {
     <section className="container mx-auto px-4 py-12" id="projects">
       <h2 className="mb-8 text-3xl font-bold">Projects</h2>
 
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+      <div className="grid grid-cols-(--grid-cols-cards) gap-8">
         {PROJECTS.map((project) => (
           <div
             key={project.title}
